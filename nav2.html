@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        nav {
+
+            /* border: 2px solid black; */
+            height: 60px;
+            background: rgb(238, 174, 202);
+            background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+            /* background: rgba(0,0, 0,0.2); */
+            position: sticky;
+            top: 0px;
+
+        }
+
+        nav ul li {
+            display: flex;
+            float: left;
+            margin-top: 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-size: larger;
+            color: aliceblue;
+        }
+
+        .sear {
+            float: right;
+            margin-right: 10px;
+            margin-top: 15px;
+            padding: 4px;
+            border-radius: 10px;
+        }
+
+        .sea {
+            float: right;
+            margin-right: 30px;
+            margin-top: 15px;
+            padding: 4px;
+            border-radius: 10px;
+        }
+
+        img {
+            width: 100%;
+            height: 100vh;
+        }
+
+        nav img {
+            margin-left: 20px;
+            float: left;
+            width: 100px;
+            height: 60px;
+            border-radius: 50%;
+        }
+
+        .home {
+            padding-left: 400px;
+        }
+
+        .feat {
+            padding-left: 20px;
+        }
+
+        .coll {
+            padding-left: 20px;
+        }
+
+        .about {
+            padding-left: 20px;
+        }
+
+        .container {
+            position: relative;
+            height: 100vh;
+            background-image: url(../images13.webp);
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0.5;
+
+        }
+
+        .container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .container h1 {
+            position: relative;
+            z-index: 1;
+            color: whitesmoke;
+            font-size: 130px;
+            text-align: center;
+            margin-top: 200px;
+            margin-right: 300px;
+        }
+
+        .container span {
+            color: aqua;
+            font-size: 100px;
+            margin-left: 300px;
+
+
+
+
+        }
+
+        .end {
+            width: auto;
+            height: 100%;
+            background: rgb(238, 174, 202);
+            background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+
+
+        }
+
+        .row {
+            display: flex;
+
+        }
+
+        .list {
+            margin-left: 150px;
+
+        }
+
+        .list1 {
+            margin-left: 150px;
+        }
+
+        .list2 {
+            margin-left: 150px;
+        }
+
+        iframe {
+            margin-left: 150px;
+        }
+
+        h5 {
+            font-size: 20px;
+        }
+
+        ul li {
+            font-size: 19px;
+            list-style: none;
+
+
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .iframe {
+            margin-left: 250px;
+            display: flex;
+            float: right;
+            
+            /* margin-bottom: 100px;
+             */
+             margin-top: -60px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <img src="./images15.jpg" alt="">
+
+        <ul>
+            <li><a class="home" href="">Home</a></li>
+            <li><a class="feat" href="">features</a></li>
+            <li><a class="coll" href="">collections</a></li>
+            <li><a class="about" href="./aboutus.html" target="_self">about</a></li>
+
+            <button id="qq" name="qq" class="sea" type="submit">search</button>
+            <input for="qq" class="sear" type="text" placeholder="enter to search">
+
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Royal Enfield
+            <span>
+                bike collections
+            </span>
+        </h1>
+    </div>
+
+
+
+
+
+    
+
+    <footer class="end">
+        <div class="main">
+            <div class="row">
+                <div class="list">
+                    <h5>Motorcycles</h5><br>
+                    <ul>
+                        <li>New Himalayan</li>
+                        <li>Bullet 350</li>
+                        <li>Hunter 350</li>
+                        <li>Continetal GT</li>
+                        <li>Classic 350</li>
+                    </ul>
+                </div>
+                <div class="list1">
+                    <h5>Rides and event</h5><br>
+                    <ul>
+                        <li><a href="https://www.royalenfield.com/in/en/rides-calendar/" target="_self">Rides</a></li>
+
+                    </ul>
+                </div>
+                <div class="list2">
+                    <h5>Careers</h5><br>
+                    <ul>
+                        <li><a href="https://careers.royalenfield.com/us/en/home">Life at Royal Enfield</a></li>
+                        <li><a href="https://www.royalenfield.com/in/en/careers-at-royal-enfield-dealership/">Life at
+                                Royal Enfield
+                                Careers at Dealership</a></li>
+
+                    </ul>
+                    <!-- </div>
+                <iframe src="https:sanpchat.com" frameborder="1"></iframe>
+
+            </div> -->
+                    <div class="iframe" >
+                        
+                        <iframe width="200" height="100" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
+                                href="https://www.gps.ie/">gps systems</a></iframe>
+                    </div>
+                    
+                </div>
+            </div>
+
+
+    </footer>
+
+</body>
+
+</html>
